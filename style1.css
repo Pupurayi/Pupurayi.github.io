@@ -9,16 +9,50 @@ h1{
     justify-content:space-around;
 }
 .picture > img{
-    height:260px;
+    height:300px;
     width:250px;
+    filter: grayscale(100%);
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+    position: fixed;
+    width: 100%;
+}
+li{
+    float: left;
+    border-right: 1px solid #bbb;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.active{
+    background-color: orange;
 }
 p{
-    
-    font-family:Yu Gothic;
-    }
-  
- h3{
+    font-family:Yu Gothic;  
+}
+h3{
     font-size:30px;
     font-family:Yu Gothic;
     color:purple;
     }
+footer{
+    background-color: grey;
+    text-align: center;
+    color: white;
+    font-family: Yu Gothic;
+}
