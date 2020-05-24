@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+   <ul>
+      <li> <a href="index.html">Home</a></li>
+      <li><a href class="active" href="calc.html">Calc</a> </li>
+      <li> <a href="myself.html">Abot</a></li>
+      <li> <a href="CV_Pupu.html">Resume</c></li>
+      <li><a href="popo.html">Pictures</a></li>
+  </ul>
+<head>
+   <meta name="viewport" 
+content="width=device-width, initial-scale=1">
+<link href="style1.css" rel="stylesheet">
+   <title>Calculator</title>
+   <link href="style1.css" rel="stylesheet">
+</head>
+<body style="padding:20px 20px; background-color:rgb(181, 158, 226);" >
+      <script>  
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+           
+                function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+                   
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+      </script> 
+      
+      <style> 
+         .title{ 
+         margin-bottom: 20px; 
+         text-align:center; 
+         width: 400px; 
+         color:deeppink; 
+         border: solid medium ; 
+         } 
+  
+         input[type="button"] 
+         { 
+         background-color:purple; 
+         color:orange; 
+         font: initial;
+         border: solid medium  2px; 
+         width:100%;
+         font-size: larger; 
+         
+         } 
+  
+         input[type="text"] 
+         { 
+         background-color:orange; 
+         font-family:  Yu Gothic, Verdana, Geneva, Tahoma, sans-serif;  
+         border: solid medium 1px; 
+         width:98% 
+         } 
+      </style> 
+   </head> 
+   <!-- create table -->
+   <body> 
+      <div style="font-size:160%; font-family:Arial, Helvetica, sans-serif; text-align:center; color: purple;" >Simple Calculator</div> 
+      <table border="1" width="10%" align="center"> 
+      
+         <tr> 
+            <td colspan="4"><input type="text" id="result"/></td> 
+            <!-- clr() function will call clr to clear all value -->
+            
+         </tr>
+          <tr>
+              <!-- create button and assign value to each button -->
+              <!-- dis("1") will call function dis to display value -->
+              <td><input type="button" value="(" onclick="dis('(')" /> </td>
+              <td><input type="button" value=")" onclick="dis(')')" /> </td>
+              <td><input type="button" value="c" onclick="clr()" /> </td>
+              <td><input type="button" value="e" onclick="dis('e')"/> </td> 
+          </tr> 
+          <tr> 
+            <td><input type="button" value="sin" onclick="dis('')"/> </td> 
+            <td><input type="button" value="cos" onclick="dis('')"/> </td> 
+            <td><input type="button" value="tan" onclick="dis('')"/> </td> 
+            <td><input type="button" value="ln" onclick="dis('')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="log" onclick="dis('')"/> </td> 
+            <td><input type="button" value="pi" onclick="dis('')"/> </td> 
+            <td><input type="button" value="^" onclick="dis('^')"/> </td> 
+            
+            <td><input type="button" value="/" onclick="dis('/')" > </td>
+         </tr> 
+         <tr> 
+            <!-- create button and assign value to each button -->
+            <!-- dis("1") will call function dis to display value -->
+            <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+            <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+            <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+            <td><input type="button" value="*" onclick="dis('*')"> </td> 
+         </tr> 
+          <tr>
+              
+              <td><input type="button" value="4" onclick="dis('4')" /> </td>
+              <td><input type="button" value="5" onclick="dis('5')" /> </td>
+              <td><input type="button" value="6" onclick="dis('6')" />  </td> 
+              <td><input type="button" value="-" onclick="dis('-')" /> </td>
+          </tr> 
+         <tr> 
+            <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+            <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+            <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+            <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+         </tr> 
+
+         <tr> 
+            <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+            <td><input type="button" value="." onclick="dis('.')"/> </td> 
+             <td colspan="2"><input type="button" value="=" onclick="solve()" /> </td> 
+            
+         </tr> 
+         
+      </table> 
+
+</body>
+</html>
