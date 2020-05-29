@@ -1,6 +1,5 @@
 h1{
     font-size:40px;
-    font-family:  Yu Gothic, Verdana, Geneva, Tahoma, sans-serif;  
     color:orange;
     text-align:center;
 }
@@ -43,22 +42,21 @@ li a{
     background-color: orange;
 }
 body{
-    margin: 0;
-    padding: 20px 20px;
-    background-color:rgb(213, 199, 241); 
+    margin: 0;  
+    font-family:  Yu Gothic, Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px 150px;
+    background-color:rgb(222, 215, 235);
+    font-size: larger;; 
 }
 p{  padding:20px 20px;
-    font-family:  Yu Gothic, Verdana, Geneva, Tahoma, sans-serif;  
-    font-size: larger;
 }
 h3{
     font-size:30px;
-    font-family:  Yu Gothic, Verdana, Geneva, Tahoma, sans-serif;
     color:purple;
+    text-align: center;
     }
 footer{
     background-color: grey;
     text-align: center;
     color: white;
-    font-family:  Yu Gothic, Verdana, Geneva, Tahoma, sans-serif;
 }
